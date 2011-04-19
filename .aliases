@@ -1,0 +1,24 @@
+alias eg="env | grep"
+
+alias g="git"
+
+alias cleanpyc='find . -name "*\.pyc" -print0 | xargs -0 rm -fv'
+alias prs='python manage.py runserver'
+alias sshpqa='ssh perpetually@ec2-184-73-236-192.compute-1.amazonaws.com -p 60022'
+
+alias rit='ssh -Y mfb5249@achilles.cs.rit.edu'
+
+alias ll='ls -l'
+alias la='ls -la'
+alias g++='g++ -ggdb -Wall'
+alias javac='javac -Xlint:unchecked'
+alias jc='javac *.java'
+
+alias rmc='rm -rf *.class'
+alias junit='java org.junit.runner.JUnitCore'
+
+alias cdomnom='cd ~/Documents/School/20092/DCN/Omnomia/'
+alias cdnorc='cd ~/Projects/norc/'
+alias cdlincoln="cd ~/Projects/lincoln/"
+alias cdtdi='cd ~/Projects/tdi/'
+alias cdfs='cd ~/Documents/School/20101/OS/Project2/'
