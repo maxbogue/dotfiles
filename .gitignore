@@ -1,42 +1,24 @@
-/*
+*
 !.*
 
-# From fry
 .boxprefs
-.CFUserTextEncoding
-.dropbox
-.DS_Store
-.Trash
-.Xauthority
-.Xcode
-.bash_history
-.bashrc
-.config
-.cups
-.dvdcss
-.fontconfig
-.gdb_history
-.git
-.histfile
-.lesshst
-.rnd
-.smb
-.sqlite_history
-.subversion
-.viminfo
-.zcompdump
-.zsh-update
-.zsh_history
 .ssh/*
 !.ssh/*.pub
 !.ssh/authorized_keys
 
-# From hypnotoad
-.aptitude/
-.bash_logout
-.cache/
-.couchpotato/
-.profile
-.sabnzbd/
-.sudo_as_admin_successful
-.w3m/
+# Random dotfiles.
+.CFUserTextEncoding
+.DS_Store
+.Trash/
+.Xauthority
+.bash_history
+.bash_profile
+.dbshell
+.histfile
+.histfile.VtBaWz
+.lesshst
+.mysql_history
+.viminfo
+.zcompdump
+.zsh-update
+.zsh_history
