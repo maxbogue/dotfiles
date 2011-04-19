@@ -12,12 +12,15 @@
 .Trash/
 .Xauthority
 .bash_history
+.bash_logout
 .bash_profile
+.bashrc
 .dbshell
 .histfile
 .histfile.VtBaWz
 .lesshst
 .mysql_history
+.profile
 .viminfo
 .zcompdump
 .zsh-update
