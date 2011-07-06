@@ -46,3 +46,5 @@ build/
 *.mode2v3
 *.xcodeproj/project.xcworkspace/xcuserdata/*
 *.xcodeproj/xcuserdata/*
+
+*.tmproj
