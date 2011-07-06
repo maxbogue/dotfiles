@@ -2,7 +2,7 @@
 function git_prompt_info() {
   ref=$(git symbolic-ref HEAD 2> /dev/null) || return
   if [ "$(git rev-parse --show-toplevel 2> /dev/null)" = $HOME ]; then return; fi
-  echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$(parse_git_dirty)$ZSH_THEME_GIT_PROMPT_SUFFIX"
+  echo " $ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$(parse_git_dirty)$ZSH_THEME_GIT_PROMPT_SUFFIX"
 }
 
 parse_git_dirty () {
