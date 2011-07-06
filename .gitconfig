@@ -1,6 +1,6 @@
 [user]
-    name = Max Bogue
-    email = elnaril@gmail.com
+	name = Max Bogue
+	email = max@maxbogue.com
 [core]
     excludesfile = ~/.gitignore-global
 [alias]
