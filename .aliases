@@ -1,6 +1,7 @@
 alias eg="env | grep"
 
 alias g="git"
+alias gs="git status"
 
 alias cleanpyc='find . -name "*\.pyc" -print0 | xargs -0 rm -fv'
 alias prs='python manage.py runserver'
@@ -19,6 +20,7 @@ alias junit='java org.junit.runner.JUnitCore'
 
 alias cdomnom='cd ~/Documents/School/20092/DCN/Omnomia/'
 alias cdnorc='cd ~/Projects/norc/'
-alias cdlincoln="cd ~/Projects/lincoln/"
+alias cdlinc="cd ~/Projects/Lincoln/lincoln/"
 alias cdtdi='cd ~/Projects/tdi/'
 alias cdfs='cd ~/Documents/School/20101/OS/Project2/'
+alias cdppy=' cd ~/Work/Perpetually/ && source env.sh'
