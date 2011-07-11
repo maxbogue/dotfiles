@@ -38,3 +38,5 @@
     f = fetch
     r = reset
     p = push
+[push]
+	default = tracking
