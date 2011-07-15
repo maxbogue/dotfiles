@@ -40,3 +40,5 @@
 	p = push
 [push]
 	default = tracking
+[color]
+	ui = auto
