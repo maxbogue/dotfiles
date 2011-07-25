@@ -24,6 +24,7 @@
 	f = fetch
 	p = push
 	cp = cherry-pick
+	su = submodule update
 [push]
 	default = tracking
 [color]
