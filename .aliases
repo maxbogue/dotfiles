@@ -23,4 +23,7 @@ alias cdnorc='cd ~/Projects/norc/'
 alias cdlinc="cd ~/Projects/Lincoln/lincoln/"
 alias cdtdi='cd ~/Projects/tdi/'
 alias cdfs='cd ~/Documents/School/20101/OS/Project2/'
-alias cdppy=' cd ~/Work/Perpetually/ && source env.sh'
+alias cdppy='cd ~/Work/Perpetually/ && source env.sh'
+
+alias mongod_flashcard='mongod --dbpath ~/.data/flashcard'
+alias mongod_showcase='mongod --dbpath ~/.data/showcase'
