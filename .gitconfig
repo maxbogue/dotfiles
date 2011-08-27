@@ -5,7 +5,9 @@
 	excludesfile = ~/.gitignore-global
 [alias]
 	c = commit
-	ca = commit --amend
+	ca = commit -a
+	cm = commit -m
+	cam = commit -am
 	caa = commit -a --amend -C HEAD
 	
 	r = reset
@@ -23,6 +25,7 @@
 	l = log
 	f = fetch
 	p = push
+	u = pull
 	cp = cherry-pick
 	su = submodule update
 [push]
