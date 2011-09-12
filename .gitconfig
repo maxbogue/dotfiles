@@ -17,12 +17,12 @@
 	rh1 = reset HEAD^ --hard
 	rh2 = reset HEAD^^ --hard
 	
-	s = status
+	s = status -sb
 	d = diff
 	a = add
 	co = checkout
 	b = branch
-	l = log
+	l = log --oneline --decorate
 	f = fetch
 	p = push
 	u = pull
