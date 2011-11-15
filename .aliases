@@ -23,3 +23,4 @@ alias cdtdi='cd ~/Projects/tdi/'
 alias cdfs='cd ~/Documents/School/20101/OS/Project2/'
 alias cdppy='cd ~/Work/Perpetually/ && source env.sh'
 
+alias unquarantine='xattr -d -r com.apple.quarantine'
