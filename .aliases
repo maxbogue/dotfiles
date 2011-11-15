@@ -5,7 +5,7 @@ alias la='ls -la'
 alias ll='ls -l'
 alias p='python'
 
-alias sshh='ssh max@maxbogue.com'
+alias sshl='ssh max@maxbogue.com'
 alias sshrit='ssh -Y mfb5249@achilles.cs.rit.edu'
 alias sshpqa='ssh perpetually@ec2-184-73-236-192.compute-1.amazonaws.com -p 60022'
 
