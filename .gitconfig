@@ -2,7 +2,7 @@
 	name = Max Bogue
 	email = max@maxbogue.com
 [core]
-	excludesfile = ~/.gitignore-global
+	excludesfile = ~/.gitignore
 [alias]
 	c = commit
 	ca = commit -a
