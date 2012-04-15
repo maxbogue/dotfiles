@@ -1,1 +1,4 @@
+*.un~
+
 .ssh/id_rsa
+.ssh/known_hosts
