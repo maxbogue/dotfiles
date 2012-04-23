@@ -27,16 +27,6 @@ set formatoptions=qrn1
 " set colorcolumn=80
 set number
 
-" Vim training mode!
-nnoremap <up> <nop>
-nnoremap <down> <nop>
-nnoremap <left> <nop>
-nnoremap <right> <nop>
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
-
 " Sanification.
 set encoding=utf-8
 set scrolloff=3
@@ -92,6 +82,5 @@ autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
-nnoremap <leader>a :Ack
 
 au FocusLost * :wa
