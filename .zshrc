@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # Path fixes.
-export PATH=/usr/local/bin:$PATH:/usr/local/mysql/bin:/usr/local/mongodb/bin:~/.cabal/bin:~/Projects/norc/bin:/usr/local/Cellar/smlnj/110.73/libexec/bin
+export PATH=/usr/local/bin:$PATH:/usr/local/mysql/bin:/usr/local/mongodb/bin:~/Library/Haskell/bin:~/Projects/norc/bin
 export PYTHONPATH=$PYTHONPATH:~/Projects/:~/Projects/Lincoln
 export SVN_EDITOR=vim
 export DJANGO_SETTINGS_MODULE='django_config.settings'
