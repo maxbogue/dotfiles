@@ -17,7 +17,7 @@
 	rh1 = reset HEAD^ --hard
 	rh2 = reset HEAD^^ --hard
 	
-	s = status -sb
+	s = status -s
 	d = diff
 	a = add
 	co = checkout
