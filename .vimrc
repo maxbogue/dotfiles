@@ -61,6 +61,12 @@ vnoremap <tab> %
 
 vnoremap <leader>r "hy:.,$s/<C-r>h//gc<left><left><left>
 
+" Shortcut to rapidly toggle `set list`
+nmap <leader>l :set list!<CR>
+
+" Use the same symbols as TextMate for tabstops and EOLs
+set listchars=tab:▸\ ,eol:¬
+
 " Key remappings.
 nnoremap j gj
 nnoremap k gk

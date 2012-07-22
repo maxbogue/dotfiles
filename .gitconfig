@@ -3,20 +3,21 @@
 	email = max@maxbogue.com
 [core]
 	excludesfile = ~/.gitignore
+	editor = /usr/bin/vim
 [alias]
 	c = commit
 	ca = commit -a
 	cm = commit -m
 	cam = commit -am
 	caa = commit -a --amend -C HEAD
-	
+
 	r = reset
 	r1 = reset HEAD^
 	r2 = reset HEAD^^
 	rh = reset --hard
 	rh1 = reset HEAD^ --hard
 	rh2 = reset HEAD^^ --hard
-	
+
 	s = status -s
 	d = diff
 	a = add
