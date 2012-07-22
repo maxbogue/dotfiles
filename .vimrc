@@ -22,7 +22,7 @@ set expandtab
 
 " Line display and wrapping.
 set wrap
-set textwidth=79
+set textwidth=80
 set formatoptions=qrn1
 " set colorcolumn=80
 set number
@@ -42,6 +42,7 @@ set ruler
 set backspace=indent,eol,start
 set laststatus=2
 set mouse=a
+set autoread
 " set relativenumber
 " set undofile
 
@@ -57,6 +58,8 @@ set hlsearch
 nnoremap <leader><space> :noh<CR>
 nnoremap <tab> %
 vnoremap <tab> %
+
+vnoremap <leader>r "hy:.,$s/<C-r>h//gc<left><left><left>
 
 " Key remappings.
 nnoremap j gj
