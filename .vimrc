@@ -1,3 +1,5 @@
+set listchars=tab:▸\ ,eol:¬
+nmap <leader>l :set list!<CR>
 
 set nocompatible
 set modelines=0
@@ -36,7 +38,6 @@ set showcmd
 set hidden
 set wildmenu
 set wildmode=list:longest,full
-set visualbell
 set ttyfast
 set ruler
 set backspace=indent,eol,start
