@@ -16,7 +16,7 @@ export ZSH_THEME="maxbogue"
 
 # virtualenvwrapper stuff.
 export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+source /usr/local/bin/virtualenvwrapper.sh >/dev/null 2>&1
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
