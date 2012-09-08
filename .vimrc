@@ -13,7 +13,7 @@ filetype plugin indent on
 " Display options.
 syntax on
 set background=dark
-colorscheme molokai 
+colorscheme neverland
 set guifont=Menlo:h11
 
 " Tab options.
