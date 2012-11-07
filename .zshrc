@@ -2,7 +2,7 @@
 
 # Path fixes.
 export PATH=/usr/local/bin:$PATH:/usr/local/mysql/bin:/usr/local/mongodb/bin:~/Library/Haskell/bin:~/Projects/norc/bin
-export PYTHONPATH=$PYTHONPATH:~/Projects/:~/Projects/Lincoln
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:/usr/local/lib/python:$PYTHONPATH:~/Projects/:~/Projects/Lincoln
 export SVN_EDITOR=vim
 export DJANGO_SETTINGS_MODULE='django_config.settings'
 export NORC_ENVIRONMENT='MaxEnv'
