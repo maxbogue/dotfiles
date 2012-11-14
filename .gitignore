@@ -1,5 +1,2 @@
-*.un~
-
-.ssh/id_rsa
-.ssh/known_hosts
-.vim/.netrwhist
+ssh/id_rsa
+ssh/known_hosts
