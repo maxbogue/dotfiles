@@ -10,6 +10,8 @@ alias sshr='ssh -Y max@robotics2.cs.rit.edu'
 alias sshrit='ssh -Y mfb5249@achilles.cs.rit.edu'
 alias sshpi='ssh root@raspberrypi'
 alias sshelec='ssh root@openelec'
+alias moshl='mosh max@maxbogue.com'
+alias moshr='mosh max@robotics2.cs.rit.edu'
 
 alias cleanpyc='find . -name "*\.pyc" -print0 | xargs -0 rm -fv'
 alias prs='python manage.py runserver'
