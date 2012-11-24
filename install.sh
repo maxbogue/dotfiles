@@ -13,14 +13,12 @@ files="aliases gitconfig gitignore gvimrc oh-my-zsh ssh vim vimrc zshrc"
 # Backup existing dotfiles.
 for f in $files; do
     p=$HOME/.$f
-    if [ -e "$p" ]; then
-        if [ -L "$p" ]; then
-            echo "Removing existing symlink $p"
-            rm $p
-        else
-            echo "Existing $f found; moving to $p.bak"
-            mv $p $p.bak
-        fi
+    if [ -L "$p" ]; then
+        echo "Removing existing symlink $p"
+        rm $p
+    elif [ -e "$p" ]; then
+        echo "Existing $f found; moving to $p.bak"
+        mv $p $p.bak
     fi
 done
 
