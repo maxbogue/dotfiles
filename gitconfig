@@ -28,7 +28,10 @@
 	p = push
 	u = pull
 	cp = cherry-pick
+
+	si = submodule init
 	su = submodule update
+	suu = submodule foreach git pull origin master
 [push]
 	default = tracking
 [color]
