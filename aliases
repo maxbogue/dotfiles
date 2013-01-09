@@ -1,9 +1,15 @@
-alias eg="env | grep"
+# For two character git commands!
 alias g="git"
+# To override ghost script obnoxiousness.
 alias gs="git status"
-alias la='ls -la'
+# Shorter ls commands.
+alias ls='ls -1'
 alias ll='ls -l'
+alias la='ls -la'
+# Python is just such a long word.
 alias p='python'
+# For searching the environment variables.
+alias eg="env | grep"
 
 alias sshl='ssh max@maxbogue.com'
 alias sshr='ssh -Y max@robotics2.cs.rit.edu'
@@ -31,3 +37,5 @@ alias cdfs='cd ~/Documents/School/20101/OS/Project2/'
 alias cdppy='cd ~/Work/Perpetually/ && source env.sh'
 
 alias unquarantine='xattr -d -r com.apple.quarantine'
+# Show history.
+alias history='fc -l 1 | less +G'
