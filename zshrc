@@ -42,4 +42,8 @@ else
     BOXNAME=`hostname -s`
     COLOR=%{$fg[white]%}
 fi
-PS1="$COLOR%n@$BOXNAME %{$reset_color%}%c$COLOR $%{$reset_color%} "
+if [ $TERM = 'dumb' ]; then
+    PS1="%n@$BOXNAME %c $ "
+else
+    PS1="$COLOR%n@$BOXNAME %{$reset_color%}%c$COLOR $%{$reset_color%} "
+fi

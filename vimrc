@@ -4,6 +4,8 @@ nmap <leader>l :set list!<CR>
 set nocompatible
 set modelines=0
 set shortmess+=I
+set shell=/bin/zsh
+set shellcmdflag=-ic
 
 " Pathogen.
 filetype off
