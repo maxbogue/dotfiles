@@ -3,7 +3,6 @@ alias g="git"
 # To override ghost script obnoxiousness.
 alias gs="git status"
 # Shorter ls commands.
-alias ls='ls -1'
 alias ll='ls -l'
 alias la='ls -la'
 # Python is just such a long word.
