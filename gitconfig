@@ -27,6 +27,7 @@
 	f = fetch
 	p = push
 	u = pull
+	ur = pull --rebase
 	cp = cherry-pick
 
 	si = submodule init
