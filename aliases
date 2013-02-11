@@ -11,6 +11,8 @@ alias p='python'
 alias eg="env | grep"
 
 alias sshl='ssh max@maxbogue.com'
+alias sshvcg='ssh elnaril_vermontgifted@ssh.phx.nearlyfreespeech.net'
+alias sshtdi='ssh tdi@tdivermont.com'
 alias sshr='ssh -Y max@robotics2.cs.rit.edu'
 alias sshrit='ssh -Y mfb5249@achilles.cs.rit.edu'
 alias sshpi='ssh root@raspberrypi'
