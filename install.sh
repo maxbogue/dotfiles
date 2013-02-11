@@ -8,7 +8,7 @@ lnif() {
     fi
 }
 
-files="aliases gitconfig gitignore gvimrc oh-my-zsh ssh vim vimrc zshrc"
+files="aliases gitconfig gitignore gvimrc oh-my-zsh ssh tmux.conf vim vimrc zshrc"
 
 # Backup existing dotfiles.
 for f in $files; do
