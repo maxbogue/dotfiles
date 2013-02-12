@@ -9,6 +9,8 @@ alias la='ls -la'
 alias p='python'
 # For searching the environment variables.
 alias eg="env | grep"
+# Better tmux command.
+alias tmuxx='tmux -2 attach || tmux -2 new'
 
 alias sshl='ssh max@maxbogue.com'
 alias sshvcg='ssh elnaril_vermontgifted@ssh.phx.nearlyfreespeech.net'
