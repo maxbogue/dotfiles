@@ -22,3 +22,6 @@
 [submodule "vim/bundle/seek"]
 	path = vim/bundle/seek
 	url = https://github.com/goldfeld/vim-seek.git
+[submodule "vim/color-repos/zenburn"]
+	path = vim/color-repos/zenburn
+	url = https://github.com/jnurmine/Zenburn.git
