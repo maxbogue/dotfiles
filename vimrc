@@ -13,7 +13,6 @@ filetype plugin indent on
 " Display options.
 syntax on
 set background=dark
-set t_Co=256
 colorscheme neverland
 set guifont=Menlo:h11
 
