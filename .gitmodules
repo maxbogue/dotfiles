@@ -25,3 +25,6 @@
 [submodule "vim/color-repos/zenburn"]
 	path = vim/color-repos/zenburn
 	url = https://github.com/jnurmine/Zenburn.git
+[submodule "vim/bundle/gitgutter"]
+	path = vim/bundle/gitgutter
+	url = git://github.com/airblade/vim-gitgutter.git

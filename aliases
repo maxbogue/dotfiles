@@ -12,7 +12,7 @@ alias eg="env | grep"
 # Better tmux command.
 alias tmuxx='tmux -2 attach || tmux -2 new'
 
-alias sshl='ssh max@maxbogue.com'
+alias ssha='ssh max@maxbogue.com'
 alias sshvcg='ssh elnaril_vermontgifted@ssh.phx.nearlyfreespeech.net'
 alias sshtdi='ssh tdi@tdivermont.com'
 alias sshr='ssh -Y max@robotics2.cs.rit.edu'
@@ -20,7 +20,7 @@ alias sshrit='ssh -Y mfb5249@achilles.cs.rit.edu'
 alias sshpi='ssh root@raspberrypi'
 alias sshelec='ssh root@openelec'
 alias sshc='ssh -Y corobot@corobot1.wireless.rit.edu'
-alias moshl='mosh max@maxbogue.com'
+alias mosha='mosh max@maxbogue.com -- zsh -c "tmux -2 attach || tmux -2 new"'
 alias moshr='mosh max@robotics2.cs.rit.edu -- zsh -c "tmux -2 attach || tmux -2 new"'
 alias moshc='mosh corobot@corobot1.wireless.rit.edu -- zsh -c "tmux -2 attach || tmux -2 new"'
 
