@@ -67,7 +67,6 @@ set autoread                " Update the buffer when a file changes
 set autowrite               " Write on :next/:prev/^Z
 set backspace=indent,eol,start
                             " Make backspace work in more places
-set colorcolumn=80          " Mark the 80th column
 set encoding=utf-8          " Use UTF-8 by default
 set expandtab               " Use soft tabs
 set formatoptions=tcqn1     " t - autowrap normal text
