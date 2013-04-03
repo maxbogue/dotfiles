@@ -20,6 +20,8 @@
 
 	s = status -s
 	d = diff
+	wd = diff --color-words
+	wdd = diff --word-diff
 	a = add
 	co = checkout
 	b = branch
