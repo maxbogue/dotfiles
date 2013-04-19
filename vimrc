@@ -94,6 +94,8 @@ set showmatch               " Hilight matching braces/parens/etc.
 set showmode                " Display the mode in the status bar
 set smartcase               " Make patterns with caps case-sensitive
 set softtabstop=4           " Make spaces feel like tabs
+set splitbelow              " Horizontal split opens below
+set splitright              " Vertical split opens to the right
 set tabstop=4               " The One True Tab Width
 set ttyfast                 " Better redrawing
 set wildmenu                " Show possible completions on the command line
