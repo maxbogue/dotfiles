@@ -42,9 +42,6 @@ setopt append_history
 setopt extended_history
 setopt hist_verify
 
-# vi keybindings
-bindkey -v
-
 # prompt
 if [ -f ~/.boxprefs ]; then
     source ~/.boxprefs
