@@ -12,6 +12,8 @@ alias eg="env | grep"
 # Better tmux command.
 alias tmuxx='tmux -2 attach || tmux -2 new'
 
+function search() { find . -name "$1" -type f | xargs grep $2 }
+
 alias ssha='ssh max@maxbogue.com'
 alias sshvcg='ssh elnaril_vermontgifted@ssh.phx.nearlyfreespeech.net'
 alias sshtdi='ssh tdi@tdivermont.com'
