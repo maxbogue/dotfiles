@@ -28,6 +28,9 @@ syntax on
 colorscheme neverland
 set guifont=Menlo:h11
 
+" Custom extension -> filetype mappings.
+au BufNewFile,BufRead *.launch set filetype=xml
+
 " Section: Hacks
 "--------------------------------------------------------------------------
 
