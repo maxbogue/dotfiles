@@ -25,8 +25,10 @@ for f in $files; do
 done
 
 # Copy the boxprefs file.
-echo "Copying basic boxprefs file to ~/.boxprefs"
-cp -n $dotfiles/boxprefs $HOME/.boxprefs
+if  [ ! -e "$HOME/.boxprefs" ]; then
+    echo "Copying example boxprefs file to ~/.boxprefs"
+    cp $dotfiles/boxprefs $HOME/.boxprefs
+fi
 
 # Fix ssh permissions.
 if [ "`ls -ld $dotfiles/ssh | awk '{print $1}'`" != "drwx------" ]; then
