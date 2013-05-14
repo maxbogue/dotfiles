@@ -2,12 +2,6 @@
 
 dotfiles="$HOME/.dotfiles"
 
-lnif() {
-    if [ ! -e $2 ] ; then
-        ln -s $1 $2
-    fi
-}
-
 files="aliases gitconfig gitignore gvimrc ssh tmux.conf tmux-powerlinerc vim vimrc zshrc"
 
 # Backup existing dotfiles.
@@ -29,6 +23,10 @@ for f in $files; do
     echo "Linking $dest to $source"
     ln -s $source $dest
 done
+
+# Copy the boxprefs file.
+echo "Copying basic boxprefs file to ~/.boxprefs"
+cp -n $dotfiles/boxprefs $HOME/.boxprefs
 
 # Fix ssh permissions.
 if [ "`ls -ld $dotfiles/ssh | awk '{print $1}'`" != "drwx------" ]; then

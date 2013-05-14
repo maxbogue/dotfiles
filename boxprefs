@@ -1,0 +1,2 @@
+BOXNAME="$(hostname)"
+COLOR=%{$fg[white]%}
