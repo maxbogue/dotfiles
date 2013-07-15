@@ -10,7 +10,7 @@ alias p='python'
 # For searching the environment variables.
 alias eg="env | grep"
 # Better tmux command.
-alias tmuxx='tmux -2 attach || tmux -2 new'
+alias tmuxx='tmux -2 attach -d || tmux -2 new'
 
 function search() { find . -name "$1" -type f | xargs grep $2 }
 
