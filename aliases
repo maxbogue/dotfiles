@@ -1,7 +1,7 @@
 # For two character git commands!
 alias g="git"
 # To override ghost script obnoxiousness.
-alias gs="git status"
+alias gs="g s"
 # Shorter ls commands.
 alias ll='ls -l'
 alias la='ls -la'
@@ -10,7 +10,8 @@ alias p='python'
 # For searching the environment variables.
 alias eg="env | grep"
 # Better tmux command.
-alias tmuxx='tmux -2 attach -d || tmux -2 new'
+TMUXX="tmux -2 attach -d || tmux -2 new"
+alias tmuxx=$TMUXX
 
 function search() { find . -name "$1" -type f | xargs grep $2 }
 
@@ -22,9 +23,9 @@ alias sshrit='ssh -Y mfb5249@achilles.cs.rit.edu'
 alias sshpi='ssh root@raspberrypi'
 alias sshelec='ssh root@openelec'
 alias sshc='ssh -Y corobot@corobot1.wireless.rit.edu'
-alias mosha='mosh max@maxbogue.com -- zsh -c "tmux -2 attach || tmux -2 new"'
-alias moshr='mosh max@robotics2.cs.rit.edu -- zsh -c "tmux -2 attach || tmux -2 new"'
-alias moshc='mosh corobot@corobot1.wireless.rit.edu -- zsh -c "tmux -2 attach || tmux -2 new"'
+alias mosha='mosh max@maxbogue.com -- zsh -c "$TMUXX"'
+alias moshr='mosh max@robotics2.cs.rit.edu -- zsh -c "$TMUXX"'
+alias moshc='mosh corobot@corobot1.wireless.rit.edu -- zsh -c "$TMUXX"'
 
 alias cleanpyc='find . -name "*\.pyc" -print0 | xargs -0 rm -fv'
 alias prs='python manage.py runserver'
