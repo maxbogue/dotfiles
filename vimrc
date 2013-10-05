@@ -25,7 +25,7 @@ nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " Display options.
 syntax on
-colorscheme neverland
+colorscheme molokai
 set guifont=Menlo:h11
 
 " Custom extension -> filetype mappings.
