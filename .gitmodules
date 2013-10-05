@@ -37,3 +37,9 @@
 [submodule "vim/bundle/syntastic"]
 	path = vim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "vim/color-repos/molokai"]
+	path = vim/color-repos/molokai
+	url = https://github.com/tomasr/molokai
+[submodule "vim/color-repos/neverland"]
+	path = vim/color-repos/neverland
+	url = https://github.com/trapd00r/neverland-vim-theme.git
