@@ -4,25 +4,34 @@ dotfiles="$HOME/.dotfiles"
 
 files="aliases gitconfig gitignore gvimrc ssh tmux.conf tmux-powerlinerc vim vimrc zshrc"
 
+dotfiles_backup () {
+    if [ -L "$1" ]; then
+        echo "Removing existing symlink $1"
+        rm $1
+    elif [ -e "$1" ]; then
+        echo "Existing $1 found; moving to $1.bak"
+        mv $1 $1.bak
+    fi
+}
+
+dotfiles_link () {
+    echo "Linking $2 to $1"
+    ln -s $1 $2
+}
+
 # Backup existing dotfiles.
 for f in $files; do
     p=$HOME/.$f
-    if [ -L "$p" ]; then
-        echo "Removing existing symlink $p"
-        rm $p
-    elif [ -e "$p" ]; then
-        echo "Existing $f found; moving to $p.bak"
-        mv $p $p.bak
-    fi
+    dotfiles_backup $p
 done
+dotfiles_backup $HOME/.irssi/config
 
 # Create symlinks.
 for f in $files; do
-    source=$dotfiles/$f
-    dest=$HOME/.$f
-    echo "Linking $dest to $source"
-    ln -s $source $dest
+    dotfiles_link $dotfiles/$f $HOME/.$f
 done
+mkdir -p $HOME/.irssi
+dotfiles_link $dotfiles/irssi $HOME/.irssi/config
 
 # Copy the boxprefs file.
 if  [ ! -e "$HOME/.boxprefs" ]; then
