@@ -32,8 +32,7 @@
 	ur = pull --rebase
 	cp = cherry-pick
 
-	si = submodule init
-	su = submodule update
+	su = submodule update --init --recursive
 	suu = submodule foreach git pull origin master
 [push]
 	default = tracking
