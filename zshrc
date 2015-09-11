@@ -1,7 +1,7 @@
 source ~/.aliases
 
 # Path fixes.
-export PATH=/usr/local/bin:$PATH
+export PATH=$HOME/.dotfiles/bin:/usr/local/bin:$PATH
 
 # ls coloring
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
