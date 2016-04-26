@@ -9,7 +9,7 @@
 	ca = commit -a
 	cm = commit -m
 	cam = commit -am
-	caa = commit -a --amend -C HEAD
+	e = commit -a --amend --no-edit
 
 	r = reset
 	r1 = reset HEAD^
@@ -20,10 +20,12 @@
 
 	s = status -s
 	d = diff
+	dm = diff origin/master
 	wd = diff --color-words
 	wdd = diff --word-diff
 	a = add
 	co = checkout
+  bm = !sh -c 'git checkout -b $0 origin/master'
 	b = branch
 	l = log --oneline --decorate
 	f = fetch
@@ -38,3 +40,8 @@
 	default = tracking
 [color]
 	ui = auto
+[branch]
+	autosetupmerge = always
+	autosetuprebase = always
+[http]
+	cookiefile = ~/.gitcookies

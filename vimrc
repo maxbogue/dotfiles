@@ -70,6 +70,7 @@ set autoread                " Update the buffer when a file changes
 set autowrite               " Write on :next/:prev/^Z
 set backspace=indent,eol,start
                             " Make backspace work in more places
+set completeopt=            " Prevents weird completion split from appearing
 set encoding=utf-8          " Use UTF-8 by default
 set expandtab               " Use soft tabs
 set formatoptions=tcqn1     " t - autowrap normal text
@@ -104,7 +105,7 @@ set ttyfast                 " Better redrawing
 set wildmenu                " Show possible completions on the command line
 set wildmode=list:longest,full
                             " List all options and complete
-set wildignore=*.class,*.o,*~,*.pyc,.git,node_modules
+set wildignore=*.class,*.o,*.so,*~,*.pyc,.git,node_modules
                             " Ignore certain files in tab-completion
 
 " Section: Plugin Configuration

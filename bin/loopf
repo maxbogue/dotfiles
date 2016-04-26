@@ -1,0 +1,8 @@
+#!/bin/bash
+
+counter=0
+"$@"; while [ $? -eq 0 ]; do
+  let counter++
+  "$@";
+done
+echo "Succeeded $counter times before failing."
