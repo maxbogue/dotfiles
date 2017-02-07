@@ -87,7 +87,7 @@ set laststatus=2            " Always show the status bar
 set listchars=tab:▸\ ,eol:¬,extends:»,precedes:«
                             " How to display invisible characters
 set modelines=0
-set mouse=a                 " Allow the mouse to be used in all modes
+set mouse=                  " Allow the mouse to be used in all modes
 set nocompatible            " Don't try to be vi compatible
 set nonumber                " Start without line numbers
 set ruler                   " Set row/col and percentage
