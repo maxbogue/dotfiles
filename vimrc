@@ -92,15 +92,15 @@ set nocompatible            " Don't try to be vi compatible
 set nonumber                " Start without line numbers
 set ruler                   " Set row/col and percentage
 set scrolloff=5             " Keep cursor this many lines from top/bottom
-set shiftwidth=4            " Number of spaces to shift for autoindent or >,<
+set shiftwidth=2            " Number of spaces to shift for autoindent or >,<
 set shortmess+=I            " No intro message
 set showmatch               " Hilight matching braces/parens/etc.
 set showmode                " Display the mode in the status bar
 set smartcase               " Make patterns with caps case-sensitive
-set softtabstop=4           " Make spaces feel like tabs
+set softtabstop=2           " Make spaces feel like tabs
 set splitbelow              " Horizontal split opens below
 set splitright              " Vertical split opens to the right
-set tabstop=4               " The One True Tab Width
+set tabstop=2               " The One True Tab Width
 set ttyfast                 " Better redrawing
 set wildmenu                " Show possible completions on the command line
 set wildmode=list:longest,full

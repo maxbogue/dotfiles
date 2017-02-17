@@ -11,20 +11,27 @@ servers = (
     use_ssl = "yes";
     ssl_verify = "no";
     autoconnect = "yes";
+  },
+  {
+    address = "irc.tdivermont.org";
+    chatnet = "TDI";
+    port = "7000";
+    password = "max:gremlins";
+    use_ssl = "no";
+    ssl_verify = "no";
   }
 );
 
 chatnets = {
   Drax = { type = "IRC"; nick = "elnaril"; };
+  TDI = { type = "IRC"; nick = "max"; };
 };
 
 channels = (
   { name = "#general"; chatnet = "Drax"; autojoin = "yes"; }
 );
 
-hilights = (
-  { text = "elnaril"; nick = "yes"; word = "yes"; }
-);
+hilights = ( { text = "elnaril"; nick = "yes"; word = "yes"; } );
 
 aliases = {
   J = "join";
@@ -187,3 +194,4 @@ statusbar = {
     };
   };
 };
+logs = { };
