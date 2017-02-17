@@ -1,0 +1,5 @@
+#!/bin/bash
+
+git cam "$1"
+git cl upload -t "$1" \
+    && git cl try

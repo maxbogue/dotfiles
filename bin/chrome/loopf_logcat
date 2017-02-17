@@ -1,0 +1,19 @@
+#!/bin/bash
+
+function run() {
+  echo Start time: $(date "+%x %H:%M:%S:%3N")
+  adb logcat -c
+  adb logcat > failure_logcat &
+  "$@"
+  result=$?
+  { kill $! && wait $!; } 2>/dev/null
+  return $result
+}
+
+counter=0
+run "$@"; while [ $? -eq 0 ]; do
+  let counter++
+  run "$@"
+done
+echo End time: $(date "+%x %H:%M:%S:%3N")
+echo "Succeeded $counter times before failing; failure output is in failure_logcat."

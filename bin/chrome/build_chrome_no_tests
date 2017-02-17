@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ninja -C out/Debug -j1000 chrome

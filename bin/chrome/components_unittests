@@ -1,0 +1,10 @@
+#!/bin/bash
+
+ninja -C out/Debug -j1000 components_unittests \
+    && xvfb-run --server-args="-screen 0 1920x1080x24" \
+        out/Debug/components_unittests \
+            --enable-pixel-output-in-tests \
+            --user-data-dir=/tmp/sync-`date +"%s"` \
+            --test-launcher-jobs=100 \
+            --gtest_filter="$1" \
+            --vmodule=*=0
