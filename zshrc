@@ -1,7 +1,7 @@
 source ~/.aliases
 
 # Path fixes.
-export PATH=$HOME/.dotfiles/bin:$HOME/.cabal/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.dotfiles/bin:$HOME/.cabal/bin:node_modules/.bin:/usr/local/bin:$PATH
 
 # ls coloring
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
@@ -56,3 +56,7 @@ if [ $TERM = 'dumb' ]; then
 else
     PS1="$COLOR%n@$BOXNAME %{$reset_color%}%c$COLOR $%{$reset_color%} "
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

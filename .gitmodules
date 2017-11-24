@@ -43,3 +43,12 @@
 [submodule "vim/color-repos/neverland"]
 	path = vim/color-repos/neverland
 	url = https://github.com/trapd00r/neverland-vim-theme.git
+[submodule "vim/bundle/vim-vue"]
+	path = vim/bundle/vim-vue
+	url = https://github.com/posva/vim-vue.git
+[submodule "vim/bundle/vim-vue-syntastic"]
+	path = vim/bundle/vim-vue-syntastic
+	url = https://github.com/sekel/vim-vue-syntastic.git
+[submodule "vim/bundle/closetag"]
+	path = vim/bundle/closetag
+	url = https://github.com/alvan/vim-closetag
