@@ -116,13 +116,6 @@ filetype off
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
-" NERDTree
-set splitright
-nnoremap <leader>d :NERDTreeToggle<CR>
-let NERDTreeIgnore = ['\~$', '\.pyc$']
-autocmd vimenter * if !argc() | NERDTree | endif
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-
 " closetag
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.vue"
 
