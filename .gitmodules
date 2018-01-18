@@ -4,9 +4,6 @@
 [submodule "vim/bundle/nerdcommenter"]
 	path = vim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
-[submodule "vim/bundle/nerdtree"]
-	path = vim/bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
 [submodule "vim/bundle/snipmate"]
 	path = vim/bundle/snipmate
 	url = https://github.com/msanders/snipmate.vim.git
@@ -43,3 +40,12 @@
 [submodule "vim/color-repos/neverland"]
 	path = vim/color-repos/neverland
 	url = https://github.com/trapd00r/neverland-vim-theme.git
+[submodule "vim/bundle/vim-vue"]
+	path = vim/bundle/vim-vue
+	url = https://github.com/posva/vim-vue.git
+[submodule "vim/bundle/vim-vue-syntastic"]
+	path = vim/bundle/vim-vue-syntastic
+	url = https://github.com/sekel/vim-vue-syntastic.git
+[submodule "vim/bundle/closetag"]
+	path = vim/bundle/closetag
+	url = https://github.com/alvan/vim-closetag

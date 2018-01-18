@@ -13,9 +13,13 @@ nnoremap <leader><space> :noh<CR>
 nnoremap <tab> %
 vnoremap <tab> %
 
+nmap <space>q :bd<CR>
+
 " You don't know what you're missing if you don't use this.
+" Switch to previous buffer.
 nmap <C-e> :e#<CR>
 
+" Find/replace using the selected text.
 vnoremap <leader>r "hy:.,$s/<C-r>h//gc<left><left><left>
 
 " Shortcut to rapidly toggle `set list`
@@ -49,11 +53,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-" Finding/moving improvements
-nnoremap / /\v
-vnoremap / /\v
-
-" I always hit ":W" instead of ":w"
+" :W and :Q to :w and :q
 command! Q q
 command! W w
 
@@ -116,12 +116,11 @@ filetype off
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
-" NERDTree
-set splitright
-nnoremap <leader>d :NERDTreeToggle<CR>
-let NERDTreeIgnore = ['\~$', '\.pyc$']
-autocmd vimenter * if !argc() | NERDTree | endif
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+" closetag
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.vue"
 
 " gitgutter
 highlight clear SignColumn
+
+" YouCompleteMe
+let g:ycm_python_binary_path = 'python'

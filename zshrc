@@ -1,7 +1,7 @@
 source ~/.aliases
 
 # Path fixes.
-export PATH=$HOME/.dotfiles/bin:$HOME/.cabal/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.dotfiles/bin:$HOME/.cabal/bin:node_modules/.bin:/usr/local/bin:$PATH
 
 # ls coloring
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
