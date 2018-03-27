@@ -21,13 +21,15 @@
 	s = status -s
 	d = diff
 	dm = diff origin/master
+	dh = diff HEAD
+	dc = diff --cached
 	wd = diff --color-words
 	wdd = diff --word-diff
 	a = add
 	co = checkout
-  bm = !sh -c 'git checkout -b $0 origin/master'
+	bm = !sh -c 'git checkout -b $0 origin/master'
 	b = branch
-	l = log --oneline --decorate
+	l = log --oneline --decorate --all --graph
 	f = fetch
 	p = push
 	u = pull
