@@ -43,7 +43,7 @@
 [color]
 	ui = auto
 [branch]
-	autosetupmerge = always
+	autosetupmerge = true
 	autosetuprebase = always
 [http]
 	cookiefile = ~/.gitcookies

@@ -52,3 +52,6 @@
 [submodule "vim/bundle/typescript-vim"]
 	path = vim/bundle/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim
+[submodule "vim/bundle/vim-ember-hbs"]
+	path = vim/bundle/vim-ember-hbs
+	url = https://github.com/joukevandermaas/vim-ember-hbs.git
