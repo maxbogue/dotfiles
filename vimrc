@@ -34,6 +34,7 @@ set guifont=Menlo:h11
 
 " Custom extension -> filetype mappings.
 au BufNewFile,BufRead *.launch set filetype=xml
+au BufRead,BufNewFile *.ts   setfiletype typescript
 
 " Section: Hacks
 "--------------------------------------------------------------------------
@@ -102,6 +103,7 @@ set splitbelow              " Horizontal split opens below
 set splitright              " Vertical split opens to the right
 set tabstop=2               " The One True Tab Width
 set ttyfast                 " Better redrawing
+set visualbell              " No bell
 set wildmenu                " Show possible completions on the command line
 set wildmode=list:longest,full
                             " List all options and complete
