@@ -55,3 +55,6 @@
 [submodule "vim/bundle/vim-ember-hbs"]
 	path = vim/bundle/vim-ember-hbs
 	url = https://github.com/joukevandermaas/vim-ember-hbs.git
+[submodule "vim/bundle/scss-syntax"]
+	path = vim/bundle/scss-syntax
+	url = git@github.com:cakebaker/scss-syntax.vim.git
