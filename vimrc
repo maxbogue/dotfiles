@@ -118,6 +118,8 @@ filetype off
 call pathogen#runtime_append_all_bundles()
 filetype plugin indent on
 
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+
 " closetag
 let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.vue"
 
