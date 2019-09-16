@@ -36,6 +36,9 @@
 	ur = pull --rebase
 	cp = cherry-pick
 
+  gl = grep -l
+  lg = !sh -c 'git ls-files | grep $0'
+
 	su = submodule update --init --recursive
 	suu = submodule foreach git pull origin master
 [push]
