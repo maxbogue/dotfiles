@@ -1,0 +1,9 @@
+#!/bin/sh
+
+for file in $(git ls-files | grep "$1"); do
+  if [ -e "$file" ]; then
+    newname=`echo "$file" | sed "s/^\(.*\)$1\(.*\)$/\1$2\2/"`
+    mkdir -p $(dirname $newname)
+    mv "$file" "$newname"
+  fi
+done
