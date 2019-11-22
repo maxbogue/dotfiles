@@ -12,6 +12,8 @@ alias eg="env | grep"
 # Better tmux command.
 TMUXX="tmux -2 attach -d || tmux -2 new"
 alias tmuxx=$TMUXX
+alias v="nvim"
+alias vim="nvim"
 
 alias ssha='ssh max@maxbogue.com'
 alias sshvcg='ssh elnaril_vermontgifted@ssh.phx.nearlyfreespeech.net'
