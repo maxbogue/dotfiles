@@ -31,7 +31,9 @@ for f in $files; do
     dotfiles_link $dotfiles/$f $HOME/.$f
 done
 mkdir -p $HOME/.irssi
+mkdir -p $HOME/.config/nvim
 dotfiles_link $dotfiles/irssi $HOME/.irssi/config
+dotfiles_link $dotfiles/nvim-init.vim $HOME/.config/nvim/init.vim
 
 # Copy the boxprefs file.
 if  [ ! -e "$HOME/.boxprefs" ]; then
