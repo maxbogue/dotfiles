@@ -113,18 +113,36 @@ set wildignore=*.class,*.o,*.so,*~,*.pyc,.git,node_modules
 " Section: Plugin Configuration
 "--------------------------------------------------------------------------
 
-" Pathogen
-filetype off
-call pathogen#runtime_append_all_bundles()
-filetype plugin indent on
+call plug#begin()
+
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+let g:deoplete#enable_at_startup = 1
+
+Plug 'airblade/vim-gitgutter'
+Plug 'cakebaker/scss-syntax.vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'dense-analysis/ale'
+Plug 'easymotion/vim-easymotion'
+Plug 'itchyny/lightline.vim'
+Plug 'jiangmiao/auto-pairs'
+"Plug 'junegunn/fzf'
+Plug 'leafgarland/typescript-vim'
+Plug 'mattn/emmet-vim'
+Plug 'posva/vim-vue'
+Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-surround'
+
+call plug#end()
 
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-
-" closetag
-let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.vue"
+let g:deoplete#enable_at_startup = 1
+inoremap <silent><expr> <TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " gitgutter
 highlight clear SignColumn
-
-" YouCompleteMe
-let g:ycm_python_binary_path = 'python'
