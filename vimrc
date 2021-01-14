@@ -91,6 +91,7 @@ set modelines=0
 set mouse=                  " Allow the mouse to be used in all modes
 set nocompatible            " Don't try to be vi compatible
 set nonumber                " Start without line numbers
+set re=0
 set ruler                   " Set row/col and percentage
 set scrolloff=5             " Keep cursor this many lines from top/bottom
 set shiftwidth=2            " Number of spaces to shift for autoindent or >,<
@@ -115,6 +116,21 @@ set wildignore=*.class,*.o,*.so,*~,*.pyc,.git,node_modules
 
 call plug#begin()
 
+Plug 'airblade/vim-gitgutter'
+Plug 'cakebaker/scss-syntax.vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'dense-analysis/ale'
+Plug 'easymotion/vim-easymotion'
+Plug 'HerringtonDarkholme/yats'
+Plug 'itchyny/lightline.vim'
+Plug 'jiangmiao/auto-pairs'
+"Plug 'junegunn/fzf'
+Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+Plug 'mattn/emmet-vim'
+Plug 'posva/vim-vue'
+Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-surround'
+
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
@@ -123,20 +139,6 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 let g:deoplete#enable_at_startup = 1
-
-Plug 'airblade/vim-gitgutter'
-Plug 'cakebaker/scss-syntax.vim'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'dense-analysis/ale'
-Plug 'easymotion/vim-easymotion'
-Plug 'itchyny/lightline.vim'
-Plug 'jiangmiao/auto-pairs'
-"Plug 'junegunn/fzf'
-Plug 'leafgarland/typescript-vim'
-Plug 'mattn/emmet-vim'
-Plug 'posva/vim-vue'
-Plug 'scrooloose/nerdcommenter'
-Plug 'tpope/vim-surround'
 
 call plug#end()
 
