@@ -148,6 +148,8 @@ let g:ale_fixers = {
 \   'javascript': ['eslint'],
 \   'typescript': ['eslint'],
 \   'vue': ['eslint'],
+\   'python': ['black', 'isort'],
+\   'java': ['google_java_format'],
 \}
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 let g:deoplete#enable_at_startup = 1
