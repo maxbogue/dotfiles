@@ -14,7 +14,7 @@ TMUXX="tmux -2 attach -d || tmux -2 new"
 alias tmuxx=$TMUXX
 alias v="nvim"
 alias vim="nvim"
-alias dc="docker compose"
+alias dc="docker-compose"
 
 alias ssha='ssh max@maxbogue.com'
 alias sshvcg='ssh elnaril_vermontgifted@ssh.phx.nearlyfreespeech.net'
@@ -46,3 +46,16 @@ alias cdppy='cd ~/Work/Perpetually/ && source env.sh'
 alias unquarantine='xattr -d -r com.apple.quarantine'
 # Show history.
 alias history='fc -l 1 | less +G'
+
+alias javaformat='java -jar ~/dev/google-java-format-1.7-all-deps.jar -i $(git diff main --diff-filter=ACM --name-only | grep ".java$")'
+alias slidesdb='PGOPTIONS="--search_path=slides" psql -h localhost -p 5432 -U root -d slides'
+alias stagingdb='PGOPTIONS="--search_path=slides" psql -h db-pathai-46764.aptible.in -p 28849 -U aptible -d slides'
+alias proddb='PGOPTIONS="--search_path=slides" psql -h db-pathai-14084.aptible.in -p 25498 -U aptible -d slides'
+
+alias build-run-ims-backend="cd $HOME/dev/ims/ && docker compose build server-dev tile-server-dev server-loaddata && docker compose up -d tile-server-dev && docker compose run server-loaddata && open http://localhost:8008"
+alias build-run-ims-frontend="cd $HOME/dev/ims/ims-ui/ && yarn install && yarn dev"
+alias build-run-ims="build-run-ims-backend && build-run-ims-frontend"
+alias build-run-ims-backend-sandbox="cd $HOME/dev/ims/ && docker compose build server-dev tile-server-dev && docker compose up -d tile-server-dev && dev_utils/load-sandbox-db.sh && open http://localhost:8008"
+alias build-run-ims-sandbox="build-run-ims-backend-sandbox && build-run-ims-frontend"
+alias link-cc-ims="build-run-ims-backend && cd $HOME/dev/clinical-core/clinical-core-frontend/ && yarn build && yalc push && cd $HOME/dev/ims/ims-ui && yalc add clinical-core-frontend && yarn install --force && yarn dev --force"
+alias link-cc-ims-sandbox="build-run-ims-backend-sandbox && cd $HOME/dev/clinical-core/clinical-core-frontend/ && yarn build && yalc push && cd $HOME/dev/ims/ims-ui && yalc add clinical-core-frontend && yarn install --force && yarn dev --force"

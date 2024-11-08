@@ -1,6 +1,6 @@
 [user]
 	name = Max Bogue
-	email = max@maxbogue.com
+	email = max.bogue@pathai.com
 [core]
 	excludesfile = ~/.gitignore
 	editor = /usr/local/bin/nvim

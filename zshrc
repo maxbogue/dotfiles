@@ -1,7 +1,9 @@
 source ~/.aliases
 
 # Path fixes.
-export PATH=$HOME/.dotfiles/bin:$HOME/.cabal/bin:node_modules/.bin:/usr/local/bin:/usr/local/opt/ruby/bin:$PATH
+export PATH=$HOME/.dotfiles/bin:$HOME/.cabal/bin:node_modules/.bin:/usr/local/bin:/usr/local/opt/ruby/bin:$HOME/dev/ml-environment/bin:$HOME/.local/bin:$PATH
+export MLE_USER=max.bogue
+export MLE_SLACK_USER=max.bogue
 
 # ls coloring
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
@@ -60,3 +62,13 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# pnpm
+export PNPM_HOME="/Users/max.bogue/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
+
+# tabtab source for packages
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
+export JAVA_OPTS=-Djna.library.path=$(echo $(brew --cellar c-blosc)/*/lib/)
