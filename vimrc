@@ -25,7 +25,7 @@ vnoremap <leader>r "hy:.,$s/<C-r>h//gc<left><left><left>
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
 
-nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
+"nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
 
 " Display options.
 syntax on
@@ -54,6 +54,9 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" Use double-esc to exit terminal mode.
+tnoremap <ESC><ESC> <C-\><C-N>
+
 " :W and :Q to :w and :q
 command! Q q
 command! W w
@@ -71,7 +74,6 @@ set autoread                " Update the buffer when a file changes
 set autowrite               " Write on :next/:prev/^Z
 set backspace=indent,eol,start
                             " Make backspace work in more places
-set completeopt=            " Prevents weird completion split from appearing
 set encoding=utf-8          " Use UTF-8 by default
 set expandtab               " Use soft tabs
 set formatoptions=tcqn1     " t - autowrap normal text
@@ -79,6 +81,8 @@ set formatoptions=tcqn1     " t - autowrap normal text
                             " q - gq formats comments
                             " n - autowrap lists
                             " 1 - break _before_ single-letter words
+"set foldmethod=syntax       " Support folds.
+"set foldlevel=20            " Don't be folded by default.
 set gdefault                " Search all lines by default
 set hidden                  " Don't prompt to save hidden windows until exit
 set hlsearch                " Highlight when searching
@@ -125,11 +129,20 @@ Plug 'HerringtonDarkholme/yats'
 Plug 'itchyny/lightline.vim'
 Plug 'jiangmiao/auto-pairs'
 "Plug 'junegunn/fzf'
-Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+"Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
 Plug 'mattn/emmet-vim'
 Plug 'posva/vim-vue'
 Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
+"Plug 'williamboman/mason.nvim'
+"Plug 'williamboman/mason-lspconfig.nvim'
+"Plug 'neovim/nvim-lspconfig'
+"Plug 'hrsh7th/cmp-nvim-lsp'
+"Plug 'hrsh7th/cmp-buffer'
+"Plug 'hrsh7th/cmp-path'
+"Plug 'hrsh7th/cmp-cmdline'
+"Plug 'hrsh7th/nvim-cmp'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -142,11 +155,16 @@ let g:deoplete#enable_at_startup = 1
 
 call plug#end()
 
+"set completeopt=menu,menuone,noselect
+set completeopt=
+
 let g:ale_fix_on_save = 1
 let g:ale_fixers = {
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \   'javascript': ['eslint'],
+\   'javascriptreact': ['eslint'],
 \   'typescript': ['eslint'],
+\   'typescriptreact': ['eslint'],
 \   'vue': ['eslint'],
 \   'python': ['black', 'isort'],
 \   'java': ['google_java_format'],
